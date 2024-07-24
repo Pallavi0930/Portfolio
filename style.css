@@ -31,9 +31,6 @@ body {
     font-weight: bolder;
 }
 
-.navbar-toggler-icon {
-    color: #330315;
-}
 
 .navbar-nav .nav-item {
     width: 100px;
@@ -156,6 +153,7 @@ body {
 .footer .social-links-item{
     width: 45px;
     height: 45px;
+    background-color: #FBDCC4;
     padding:10px;
     border: 2px solid #330315;
     border-radius: 50%;
