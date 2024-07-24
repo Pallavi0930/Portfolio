@@ -178,7 +178,10 @@ body {
     color: #FBDCC4;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
+    .navbar-nav .nav-item{
+        margin: 10px 0;
+    }
     .container .card{
         width: 100%;
     }
@@ -197,5 +200,9 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+
+    .social-links{
+        width: 85%;
     }
 }
