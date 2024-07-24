@@ -1,0 +1,203 @@
+/* 
+Color palette:url('https://colorhunt.co/palette/7d063331112cf2a07bfbdcc4')
+Maroon - #7D0633
+Deep Purple - #31112C
+Peach - #F2A07B
+Baby Pink - #FBDCC4
+light peach-#FDE2C8
+DARK-PEACH - #F4957C
+
+font-family: font-family: "Caveat", cursive;
+font-family: "Roboto", sans-serif;
+
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #330315;
+    color: #FBDCC4;
+}
+
+.navbar {
+    margin:0;
+    background-color: #F4957C;
+    color: #330315;
+}
+
+.navbar .navbar-brand {
+    color: #330315;
+    font-weight: bolder;
+}
+
+.navbar-toggler-icon {
+    color: #330315;
+}
+
+.navbar-nav .nav-item {
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid #330315;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #330315;
+    color: whitesmoke;
+}
+
+.navbar-nav .nav-item a {
+    color: #330315;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #FDE2C8;
+}
+
+/* --------------------------------------------Home Page-------------------------------------------- */
+.home-page {
+    margin: 0;
+    background-color: #330315;
+    color: #FBDCC4;
+    padding: 0 2%;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: 8px solid #F4957C;
+}
+
+.home-page h1 {
+    color: #F4957C;
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.home-page h4 {
+    margin-bottom: 20px;
+}
+
+.home-page .title-image {
+    margin: 0 auto;
+}
+
+.home-page .title-image img {
+    max-width: 80%;
+}
+
+/* --------------------------Education Section-------------------------------------- */
+.education,.skills {
+    padding: 3%;
+}
+
+.education section h2,.skills section h2 {
+    color:#F4957C;
+    margin-top: 20px;
+}
+
+.education .container{
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.container .card{
+    width: 30%;
+    background-color:#FBDCC4;
+    border-radius: 20px;
+    padding: 15px;
+    color: #330315;
+    border: 2px solid #dd816a;
+}
+
+.container .card p,h5{
+    color: #dd816a;
+    font-weight: 400;
+}
+/* -------------------------------skills section----------------------------------------- */
+.skills{
+    background-image: url('images/skills.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skills-cont{
+    padding: 2%;
+}
+.skills-cont .skill{
+    min-width: 105px;
+    height: 40px;
+    margin: 10px;
+    background-color: #FBDCC4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #F4957C;
+    color: #330315;
+   
+}
+/* --------------------------------------------Footer------------------------------------------ */
+.footer{
+    background-color: #F4957C;
+    color: #330315;
+    flex-wrap: wrap;
+    margin: 20px -8px -8px -8px;
+}
+
+.footer .contact{
+    font-weight: 300;
+}
+
+.footer .social-links-item{
+    width: 45px;
+    height: 45px;
+    padding:10px;
+    border: 2px solid #330315;
+    border-radius: 50%;
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social-links-item:hover{
+    background-color: #330315;
+}
+
+.footer .social-links-item .social-link{
+    font-size: 2em;
+    color: #330315;
+}
+
+.footer .social-links-item .social-link:hover{
+    font-size: 2em;
+    color: #FBDCC4;
+}
+
+@media only screen and (max-width: 425px) {
+    .container .card{
+        width: 100%;
+    }
+
+    .skills{
+        background-size: 150px;
+        background-position: bottom right;
+        padding-bottom: 5%;
+    }
+
+    marquee{
+        width: 100%;
+    }
+
+    .skills-cont .skill{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
