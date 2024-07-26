@@ -18,12 +18,18 @@ body {
     margin: 0px;
     background-color: #330315;
     color: #FBDCC4;
+    scroll-behavior: smooth;
 }
 
 .navbar {
     margin:0;
     background-color: #F4957C;
     color: #330315;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 1px 5px #F4957C;
 }
 
 .navbar .navbar-brand {
@@ -41,8 +47,7 @@ body {
 }
 
 .navbar-nav .nav-item:hover {
-    background-color: #330315;
-    color: whitesmoke;
+    background-color: whitesmoke;
 }
 
 .navbar-nav .nav-item a {
@@ -204,5 +209,42 @@ body {
 
     .social-links{
         width: 85%;
+    }
+}
+
+
+/* ----------------------------------------Project Gallery Page Styles------------------------------------ */
+
+
+.gallery{
+    width: 80%;
+    background-color: #FDE2C8;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #F4957C;
+    box-shadow: 1px 1px 5px #F4957C;
+}
+.gallery-page-heading{
+    margin-top: 75px;
+    font-family: "Caveat", cursive;
+}
+.gallery h3{
+    font-size: 2em;
+}
+.gallery ol{
+    height: 100%;
+    scroll-behavior:auto;
+
+}
+.gallery .project{
+    color: #330315;
+}
+
+
+@media only screen and (max-width: 426px) {
+    .gallery h3{
+        font-size: 1.3em;
+        margin: 15px 0;
     }
 }
